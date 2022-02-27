@@ -79,7 +79,7 @@ function MyCard({localAudioRef, setUserInformation}) {
 
   return (
     <div className="my-card">
-      <audio ref={localAudioRef} muted={isMuted}></audio>
+      <audio ref={localAudioRef} muted={true}></audio>
       <img src={icon} alt="icon" width="20%" />
       <RepresentMyName />
       {isMuted ? (
