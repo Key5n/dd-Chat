@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dd-chat/static/css/main.680ecc36.css",
+    "main.js": "/dd-chat/static/js/main.0c2cacef.js",
+    "static/js/845.c7afc82f.chunk.js": "/dd-chat/static/js/845.c7afc82f.chunk.js",
+    "static/js/787.3f6cc6f5.chunk.js": "/dd-chat/static/js/787.3f6cc6f5.chunk.js",
+    "static/media/600Hz.wav": "/dd-chat/static/media/600Hz.3d1a9923da871f142ab8.wav",
+    "static/media/ヘッドフォンオフアイコン.png": "/dd-chat/static/media/ヘッドフォンオフアイコン.0f390f6945fa4fd2f83d.png",
+    "static/media/マイク消音アイコン.svg": "/dd-chat/static/media/マイク消音アイコン.92837474edfaa54a53efb2828c3ef0ee.svg",
+    "static/media/マイクアイコン.svg": "/dd-chat/static/media/マイクアイコン.22deda60551fac2544bb71309448b3bb.svg",
+    "static/media/ヘッドフォンアイコン.svg": "/dd-chat/static/media/ヘッドフォンアイコン.099e636c019a18788d9ab393d375495f.svg",
+    "static/media/icon.svg": "/dd-chat/static/media/icon.150fc10ce6aa582106e590b9f6ed9e4a.svg",
+    "index.html": "/dd-chat/index.html",
+    "main.680ecc36.css.map": "/dd-chat/static/css/main.680ecc36.css.map",
+    "main.0c2cacef.js.map": "/dd-chat/static/js/main.0c2cacef.js.map",
+    "845.c7afc82f.chunk.js.map": "/dd-chat/static/js/845.c7afc82f.chunk.js.map",
+    "787.3f6cc6f5.chunk.js.map": "/dd-chat/static/js/787.3f6cc6f5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.680ecc36.css",
+    "static/js/main.0c2cacef.js"
+  ]
+}
