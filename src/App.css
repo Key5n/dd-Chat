@@ -35,8 +35,11 @@
 }
 
 .my-name-input{
-	margin-left: 10%;
 	font-size: 30px;
+}
+.my-name-form{
+	margin-right: 10%;
+	margin-left: 10%;
 }
 
 .his-name{

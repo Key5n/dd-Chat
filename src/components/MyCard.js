@@ -10,7 +10,7 @@ import officon from './image/ヘッドフォンオフアイコン.png';
   I, the author of this application, haven't added speaker off function
 */
 
-function MyCard({localAudioRef, setUserInformation}) {
+function MyCard({ localAudioRef, setUserInformation }) {
   const [isMuted, setIsMuted] = useState(true);
   const [isSpeakerMuted, setIsSpeakerMuted] = useState(true);
   const peerRef = useContext(PeerContext);
@@ -55,7 +55,23 @@ function MyCard({localAudioRef, setUserInformation}) {
         })
       })
       return null;
+    }
+    function handleOnSubmitEvent(e){
+      setStatus("display");
+      room.send({
+        type: 2,
+        name: e.target.value,
+      })
 
+      setUserInformation((prev) => {
+        return prev.map((user) => {
+          if (user.id === peerRef.current.id) {
+            user.name = myName;
+          }
+          return user;
+        })
+      })
+      return null;
     }
 
     return (
@@ -66,12 +82,14 @@ function MyCard({localAudioRef, setUserInformation}) {
           >
             {myName}
           </p> :
-          <input value={myName}
-            onChange={handleInputChange}
-            onBlur={handleOnBlurEvent}
-            ref={myNameInputRef}
-            className="my-name-input"
-          />
+          <form onSubmit={handleOnSubmitEvent} className="my-name-form">
+            <input value={myName}
+              onChange={handleInputChange}
+              onBlur={handleOnBlurEvent}
+              ref={myNameInputRef}
+              className="my-name-input"
+            />
+          </form>
         }
       </>
     )
