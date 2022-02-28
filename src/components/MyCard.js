@@ -16,7 +16,7 @@ function MyCard({ localAudioRef, setUserInformation }) {
   const peerRef = useContext(PeerContext);
   const room = useContext(RoomContext);
 
-  function RepresentMyName() {
+  function DisplayMyName() {
     const [status, setStatus] = useState("display");
     const myNameInputRef = useRef(null);
     const [myName, setMyName] = useState(peerRef.current.id);
@@ -100,7 +100,7 @@ function MyCard({ localAudioRef, setUserInformation }) {
     <div className="my-card">
       <audio ref={localAudioRef} muted={true}></audio>
       <img src={icon} alt="icon" width="20%" />
-      <RepresentMyName />
+      <DisplayMyName />
       {isMuted ? (
         <img src={micoff} alt="mic-icon" width="5%" style={{ marginRight: "2%" }} onClick={() => setIsMuted(!isMuted)} />
       ) : (
