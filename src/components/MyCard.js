@@ -57,6 +57,7 @@ function MyCard({ localAudioRef, setUserInformation }) {
       return null;
     }
     function handleOnSubmitEvent(e){
+      e.preventDefault();
       setStatus("display");
       room.send({
         type: 2,
